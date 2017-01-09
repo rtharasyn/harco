@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  margin: 5vh 4vh 0;
+  margin: 0 4vh 0;
   font-family: -apple-system, BlinkMacSystemFont;
 }
 
@@ -13,6 +13,7 @@ h1.text_quote {
   font-weight: 400;
   color: #000;
   line-height: 6vh;
+  margin: 0;
 }
 
 .title-link {
@@ -32,6 +33,7 @@ p.title-link {
 h4.label {
   font-size: .85rem;
   font-weight: lighter;
+  margin: 0;
 }
 
 h5.tags {
@@ -62,8 +64,10 @@ h5.label-section-title {
   flex: 1;
 }
 
-.topbar {
-  max-width: 100%;
+.navbar {
+  margin-top: 5.5vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .quote-block {
@@ -72,29 +76,93 @@ h5.label-section-title {
 }
 
 .tag-container {
-  max-width: 38ch;
+  max-width: 60ch;
 }
 
 .text {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: normal;
   color: #000;
   line-height: 1.75rem;
   max-width: 32ch;
 }
 
+.footer {
+  margin-top: 15vh;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-icons {
+  margin-right: 1rem;
+  height: 18px;
+}
+
 .text_footer {
+  margin-top: 2rem;
   font-size: .7125rem;
   font-weight: 100;
   color: #000;
-  opacity: .75;
+  opacity: .25;
 }
 
-.footer {
+.overlay {
+  height: 0%;
   width: 100%;
-  min-height: 4rem;
-  opacity: .5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-y: hidden;
+  transition: 0.3s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FE4902;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

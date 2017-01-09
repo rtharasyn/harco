@@ -12,18 +12,32 @@
 
   <body class="site">
     <main class="site-content">
-      <div class="topbar">
-        <h4 class="label"><img src="/assets/hco_logo.svg" style="height: 12px;"><img src="/assets/vertical-break.svg" style="height: 12px; padding: 0 1rem;">Product Strategy & Design</h4>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Profile</a>
+          <a href="#">Principals</a>
+          <a href="#">Work</a>
+          <a href="#">t5.</a>
+        </div>
       </div>
+
+        <div class="navbar">
+          <h4 class="label" style="cursor:pointer" onclick="openNav()"><img src="/assets/hco_logo.png" style="height: 12px;"><img src="/assets/vertical-break.svg" style="height: 12px; padding: 0 1rem;"></h4>
+          <h4 class="label">Product Strategy & Design</h4>
+        </div>
+
       <div class="quote-block">
         <h1 class="text_quote">Shaping the way we interact with the world through product strategy and design.</h1>
       </div>
+
       <div>
         <h5 class="label-section-title">project status</h5>
         <div class="title-link">
-          <p class="title-link">Mazlo<img src="/assets/open-window-icon.svg" style="height: 12px; padding-left: 1ch;"><p>
+          <a class="title-link" href="http://www.mazlo.me" target="_blank">Mazlo<img src="/assets/open-window-icon.svg" style="height: 12px; padding-left: 1ch;"><a>
         </div>
-        <p class="text">On-demand human coaching for support through life’s challenges.</p>
+        <p class="text">Delivering on-demand human coaching for support through life’s challenges.</p>
         <div class="tag-container">
           <h5 class="tags">Executive Leadershisp・Product Strategy and Management・Service Design・Marketing Strategy・Advertising・Brand Development・UxD・IxD・iOS・Android<h4>
         </div>
@@ -31,7 +45,23 @@
     </main>
 
     <footer class="footer">
-    <p class="text_footer">Harasyn.co is the profesional portfolio of <a href="https://www.linkedin.com/in/rtharasyn">Ryan Harasyn</a>, an experienced product stratgy and design leader. ©2016.</p>
+      <div class="social">
+        <a href="http://www.google.com"><img class="footer-icons" src="/assets/pinterest.svg"></a>
+        <img class="footer-icons" src="/assets/twitter.svg">
+        <img class="footer-icons" src="/assets/instagram.svg">
+        <img class="footer-icons" src="/assets/facebook.svg">
+        <img class="footer-icons" src="/assets/linkedin.svg">
+      </div>
+      <p class="text_footer">Harasyn.co is the profesional portfolio of <a href="https://www.linkedin.com/in/rtharasyn">Ryan Harasyn</a>, an experienced product stratgy and design leader. ©2017.</p>
     </footer>
+    <script>
+      function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+      }
+      </script>
   </body>
 </html>
