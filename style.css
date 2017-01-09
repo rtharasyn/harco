@@ -7,6 +7,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont;
 }
 
+.site {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-content {
+  flex: 1;
+}
+
 h1.text_quote {
   font-family: 'Lora', serif;
   font-size: 4.25vh;
@@ -16,14 +27,7 @@ h1.text_quote {
   margin: 0;
 }
 
-.title-link {
-  font-size: 1rem;
-  font-weight: lighter;
-  color: #FE4902;
-  margin-bottom: 1.5rem;
-}
-
-p.title-link {
+p.project-title-link {
   display: inline;
   color: #FE4902;
   border-bottom: 1px;
@@ -34,6 +38,24 @@ h4.label {
   font-size: .85rem;
   font-weight: lighter;
   margin: 0;
+}
+
+h5.tags {
+  font-family: 'Inconsolata', monospace;
+  font-size: .8rem;
+  font-weight: lighter;
+  line-height: 1.25rem;
+  opacity: .5;
+}
+
+h5.section-label {
+  font-family: 'Inconsolata', monospace;
+  font-size: .8rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #32333A;
+  margin-bottom: 3.5rem;
 }
 
 .topbar {
@@ -58,33 +80,21 @@ h4.label {
   margin-left: auto;
 }
 
-h5.tags {
-  font-family: 'Inconsolata', monospace;
-  font-size: .75rem;
-  font-weight: lighter;
-  line-height: 1.5rem;
-  opacity: .5;
-}
-
-h5.label-section-title {
-  font-family: 'Inconsolata', monospace;
-  font-size: .8rem;
-  font-weight: lighter;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  color: #32333A;
-  margin-bottom: 3.5rem;
-}
-
-.site {
-  min-height: 95vh;
+.project-cover {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  height: auto;
 }
 
-.site-content {
-  flex: 1;
+.project-cover img {
+  width: 100%;
+}
+
+.project-title-link {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #FE4902;
+  margin-bottom: 1.5rem;
 }
 
 .quote-block {
