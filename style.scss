@@ -52,6 +52,15 @@ h5.section-label {
     margin-bottom: 3.5rem;
 }
 
+h5.topbar-label {
+    font-family: 'Inconsolata', monospace;
+    font-size: .95rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    color: #32333A;
+}
+
 .topbar {
     margin-top: 5rem;
     display: flex;
@@ -119,6 +128,21 @@ h5.section-label {
     max-width: 32ch;
 }
 
+.text-logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #000;
+    line-height: 1.5rem;
+    letter-spacing: 3pt;
+    text-transform: uppercase;
+}
+
+.text-link {
+    color: #FE4902;
+    text-decoration: underline;
+}
+
 .footer {
     margin-top: 15vh;
 }
@@ -144,7 +168,6 @@ h5.section-label {
 
 
 .overlay {
-
     position: fixed;
     z-index: 1;
     top: 0;
@@ -152,25 +175,64 @@ h5.section-label {
     height: 0%;
     width: 100%;
     background-color: rgb(255,255,255);
-    overflow-y: hidden;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     transition: 0.3s;
 }
 
-.overlay-content {
-  margin: 20vh 4vh;
-  text-align: center;
+.overlay-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4vh;
+  max-width: 960px;
+}
+
+.overlay-topbar {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: relative;
+}
+
+.overlay-navigation-links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.overlay-title-link {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #FE4902;
+    margin-bottom: .5rem;
+}
+
+h2.overlay-title {
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #000;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.overlay p {
+  color: #000;
+  max-width: 62ch;
+  line-height: 1.5rem;
+  font-weight: normal;
 }
 
 .overlay a {
-    font-family: 'Lora', serif;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #000;
-    display: block;
-    transition: 0.1s;
+  font-family: 'Lora', serif;
+  font-size: 4.25vh;
+  font-weight: 400;
+  letter-spacing: -.025rem;
+  color: #000;
+  line-height: 5.5vh;
+  margin: 0;
+  text-decoration: none;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -179,11 +241,12 @@ h5.section-label {
 
 .overlay .closebtn {
     font-family: -apple-system, BlinkMacSystemFont,;
-    padding: 2rem 4vh 0;
-    float: right;
     font-size: 2.5rem;
     font-weight: lighter;
-    text-align: right;
+    flex: 0 1 auto;
+    margin-left: auto;
+    letter-spacing: 0;
+    line-height: 0;
 }
 
 @media screen and (max-height: 500px) {
