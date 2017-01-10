@@ -15,6 +15,7 @@ body {
 }
 
 .site-content {
+  max-width: 960px;
   flex: 1;
 }
 
@@ -22,6 +23,7 @@ h1.text_quote {
   font-family: 'Lora', serif;
   font-size: 4.25vh;
   font-weight: 400;
+  letter-spacing: -.025rem;
   color: #000;
   line-height: 5.5vh;
   margin: 0;
@@ -40,14 +42,6 @@ h4.label {
   margin: 0;
 }
 
-h5.tags {
-  font-family: 'Inconsolata', monospace;
-  font-size: .8rem;
-  font-weight: lighter;
-  line-height: 1.25rem;
-  opacity: .5;
-}
-
 h5.section-label {
   font-family: 'Inconsolata', monospace;
   font-size: .8rem;
@@ -59,7 +53,7 @@ h5.section-label {
 }
 
 .topbar {
-  margin-top: 5.5vh;
+  margin-top: 5rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -68,26 +62,29 @@ h5.section-label {
 
 .topbar-label {
   font-size: .85rem;
-  font-weight: lighter;
+  font-weight: 100;
+  letter-spacing: .025rem;
   margin: 0;
 }
 
 .topbar-menu {
   font-size: .85rem;
-  font-weight: lighter;
+  font-weight: 400;
   color: #FE4902;
   flex: 0 1 auto;
   margin-left: auto;
 }
 
 .project-cover {
-  display: flex;
-  align-items: flex-start;
-  height: auto;
+  margin: 0 -4vh 2rem;
 }
 
 .project-cover img {
   width: 100%;
+}
+
+.visible-mobile {
+  display: none !important;
 }
 
 .project-title-link {
@@ -97,13 +94,21 @@ h5.section-label {
   margin-bottom: 1.5rem;
 }
 
-.quote-block {
-  max-width: 72ch;
-  margin: 10vh 0;
+.text-quote-block {
+  max-width: 90ch;
+  margin: 8rem 0;
 }
 
 .tag-container {
   max-width: 60ch;
+}
+
+.tag-container p {
+  font-family: 'Inconsolata', monospace;
+  font-size: .8rem;
+  font-weight: lighter;
+  line-height: 1.25rem;
+  opacity: .5;
 }
 
 .text {
@@ -116,8 +121,6 @@ h5.section-label {
 
 .footer {
   margin-top: 15vh;
-  min-height: 5vh;
-  flex: 1;
 }
 
 .social {
@@ -130,34 +133,31 @@ h5.section-label {
   height: 18px;
 }
 
-.text_footer {
-  margin: 2rem 0;
+.footer-text {
+  margin: 1.25rem 0;
   font-size: .7125rem;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.125rem;
   color: #000;
-  opacity: .25;
+  opacity: .35;
 }
 
 .overlay {
-  height: 0%;
-  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
+  height: 0%;
+  width: 100%;
   background-color: white;
   overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   transition: 0.3s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 18%;
-  width: 100%;
-  right: 30%;
-  font-size: 2.5rem;
-  text-align: right;
+  margin: 20vh 4vh;
+  text-align: center;
 }
 
 .overlay a {
@@ -177,11 +177,11 @@ h5.section-label {
 
 .overlay .closebtn {
   font-family: -apple-system, BlinkMacSystemFont;
-  position: absolute;
-  top: 1.5rem;
-  right: 30%;
+  padding: 2rem 4vh 0;
+  float: right;
   font-size: 2.5rem;
   font-weight: lighter;
+  text-align: right;
 }
 
 @media screen and (max-height: 500px) {
@@ -189,7 +189,7 @@ h5.section-label {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  .quote-block {
+  .text-quote-block {
     max-width: 42ch;
     margin: 12vh 0;
   }
@@ -208,18 +208,31 @@ h5.section-label {
 }
 
 @media screen and (max-width: 750px) {
+  .topbar {
+    margin-top: 2.25rem;
+  }
   .topbar-label {
     display: none;
   }
-  .overlay-content {
-    top: 15%;
-    right: 1.25rem;
+  .text-quote-block {
+    margin: 4rem 0;
+  }
+  h5.section-label {
+    margin-bottom: 2.5rem;
+  }
+  .project-cover {
+    margin: 0 -4vh 2rem;
+  }
+  .visible-mobile {
+    display: inline !important;
+  }
+  .hidden-mobile {
+    display: none !important;
   }
   .overlay .closebtn {
     font-family: -apple-system, BlinkMacSystemFont;
-    position: absolute;
-    top: .6rem;
-    right: 1.25rem;
+    padding: 1rem 4vh 0;
+    float: right;
     font-size: 2.5rem;
     font-weight: lighter;
   }
