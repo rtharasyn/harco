@@ -165,6 +165,37 @@ h5.overlay-label {
   }
 }
 
+.principals-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.principals {
+    margin-bottom: 6.5rem;
+}
+
+.principals-content {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      font-size: 1.125rem;
+      font-weight: lighter;
+      text-decoration: none;
+      color: #FE4902;
+      margin-bottom: .25rem;
+  }
+
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+      color: #32333A;
+      line-height: 1.5rem;
+      max-width: 62ch;
+      margin: 0 0 0 4rem;
+    }
+}
+
 .text-quote-block{
     max-width: 90ch;
     margin: 8rem 0;
@@ -195,6 +226,16 @@ h5.overlay-label {
     line-height: 1.5rem;
     max-width: 32ch;
 }
+
+.text-intro {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #32333A;
+    line-height: 1.5rem;
+    max-width: 60ch;
+    margin-bottom: 8rem;
+}
+
 
 .logo {
   a {
