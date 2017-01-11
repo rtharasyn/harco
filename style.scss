@@ -7,6 +7,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont,;
 }
 
+p {
+  color: #32333A;
+}
+
 .site {
     min-height: 95vh;
     display: flex;
@@ -24,7 +28,7 @@ h1.text_quote {
     font-size: 4.25vh;
     font-weight: 400;
     letter-spacing: -.025rem;
-    color: #000;
+    color: #32333A;
     line-height: 5.5vh;
     margin: 0;
 }
@@ -52,13 +56,14 @@ h5.section-label {
     margin-bottom: 3.5rem;
 }
 
-h5.topbar-label {
+h5.overlay-label {
     font-family: 'Inconsolata', monospace;
     font-size: .95rem;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 3pt;
     color: #32333A;
+    margin: 0;
 }
 
 .topbar {
@@ -74,6 +79,7 @@ h5.topbar-label {
     font-weight: 100;
     letter-spacing: .025rem;
     margin: 0;
+    color: #32333A;
 }
 
 .topbar-menu{
@@ -110,6 +116,7 @@ h5.topbar-label {
 
 .tag-container {
     max-width: 60ch;
+    margin: 1.5rem 0;
 
     p {
       font-family: 'Inconsolata', monospace;
@@ -123,7 +130,7 @@ h5.topbar-label {
 .text {
     font-size: 1rem;
     font-weight: normal;
-    color: #000;
+    color: #32333A;
     line-height: 1.5rem;
     max-width: 32ch;
 }
@@ -180,19 +187,20 @@ h5.topbar-label {
     transition: 0.3s;
 }
 
-.overlay-container {
+.overlay-container-outer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 4vh;
-  max-width: 960px;
 }
 
-.overlay-topbar {
+.overlay-container-inner {
+  align-items: center;
+}
+
+.overlay-top {
   margin-top: 5rem;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  position: relative;
 }
 
 .overlay-navigation-links{
@@ -212,14 +220,17 @@ h5.topbar-label {
 h2.overlay-title {
     font-size: 1.125rem;
     font-weight: normal;
-    color: #000;
+    color: #32333A;
     margin-top: 5rem;
     margin-bottom: 1.5rem;
 }
 
+.overlay-contact{
+  margin-bottom: 4rem;
+}
+
 .overlay p {
-  color: #000;
-  max-width: 62ch;
+  max-width: 545px;
   line-height: 1.5rem;
   font-weight: normal;
 }
@@ -229,7 +240,7 @@ h2.overlay-title {
   font-size: 4.25vh;
   font-weight: 400;
   letter-spacing: -.025rem;
-  color: #000;
+  color: #32333A;
   line-height: 5.5vh;
   margin: 0;
   text-decoration: none;
@@ -241,13 +252,45 @@ h2.overlay-title {
 
 .overlay .closebtn {
     font-family: -apple-system, BlinkMacSystemFont,;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: lighter;
-    flex: 0 1 auto;
-    margin-left: auto;
     letter-spacing: 0;
     line-height: 0;
+    flex: 0 1 auto;
+    margin-left: auto;
+    margin-top: .25rem;
 }
+
+.tfive {
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+    color: #32333A;
+    opacity: .4;
+}
+
+.tfive-logo {
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tfive-quote {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: .75rem;
+    line-height: 1.5rem;
+    max-width: 24ch;
+}
+
+.tfive-label {
+    font-family: 'Inconsolata', monospace;
+    font-size: .7rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
 
 @media screen and (max-height: 500px) {
   h1.text_quote {
@@ -273,16 +316,12 @@ h2.overlay-title {
 @media screen and (max-width: 750px){
   .topbar {margin-top: 2.25rem;}
   .topbar-label {display: none;}
+  .overlay-top {margin-top: 2.25rem;}
+  .overlay-navigation-links {margin: 4rem 0;}
   .text-quote-block{margin: 4rem 0;}
   h5.section-label {margin-bottom: 2.5rem;}
   .project-cover {margin: 0 -4vh 2rem;}
   .visible-mobile {display: inline !important;}
   .hidden-mobile {display: none !important;}
-  .overlay .closebtn {
-      font-family: -apple-system, BlinkMacSystemFont,;
-      padding: 1rem 4vh 0;
-      float: right;
-      font-size: 2.5rem;
-      font-weight: lighter;
-  }
+
 }
