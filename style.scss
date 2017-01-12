@@ -11,6 +11,10 @@ p {
   color: #32333A;
 }
 
+a {
+  color: #FE4902;
+}
+
 .site {
     min-height: 95vh;
     display: flex;
@@ -110,6 +114,7 @@ h5.overlay-label {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
+    width: 200px;
 
     p {
       font-family: 'Inconsolata', monospace;
@@ -145,7 +150,6 @@ h5.overlay-label {
 }
 
 .project-details {
-    margin-left: 4rem;
 
   h2 {
     font-family: 'Lora', serif;
@@ -166,12 +170,17 @@ h5.overlay-label {
 }
 
 .principals-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.principals-section {
   display: flex;
   flex-direction: column;
 }
 
 .principals {
-    margin-bottom: 6.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .principals-content {
@@ -184,6 +193,7 @@ h5.overlay-label {
       text-decoration: none;
       color: #FE4902;
       margin-bottom: .25rem;
+      width: 125px;
   }
 
     p {
@@ -195,6 +205,20 @@ h5.overlay-label {
       margin: 0 0 0 4rem;
     }
 }
+
+.principals-license {
+    margin: 12rem 0 0 0;
+
+    p {
+      font-family: 'Inconsolata', monospace;
+      font-size: .8rem;
+      font-weight: lighter;
+      line-height: 1.25rem;
+      opacity: .5;
+      max-width: 70ch;
+    }
+}
+
 
 .text-quote-block{
     max-width: 90ch;
@@ -233,7 +257,7 @@ h5.overlay-label {
     color: #32333A;
     line-height: 1.5rem;
     max-width: 60ch;
-    margin-bottom: 8rem;
+    margin-bottom: 7.5rem;
 }
 
 
@@ -254,8 +278,9 @@ h5.overlay-label {
 }
 
 .text-link {
+    font-family: -apple-system, BlinkMacSystemFont,;
+    font-size: 1rem;
     color: #FE4902;
-    text-decoration: underline;
 }
 
 .footer {
@@ -316,11 +341,28 @@ h5.overlay-label {
   }
 }
 
+.overlay-inline-links a {
+  font-family: -apple-system, BlinkMacSystemFont,;
+  font-size: 1rem;
+  color: #FE4902;
+}
+
 .overlay-navigation-links{
   display: flex;
   flex-direction: column;
   margin-top: 8rem;
   margin-bottom: 3rem;
+
+  a {
+    font-family: 'Lora', serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: -.025rem;
+    color: #32333A;
+    line-height: 3.5rem;
+    margin: 0;
+    text-decoration: none;
+  }
 }
 
 .overlay-title-link {
@@ -350,17 +392,6 @@ h5.overlay-label {
   font-weight: normal;
 }
 
-.overlay a {
-  font-family: 'Lora', serif;
-  font-size: 2.25rem;
-  font-weight: 400;
-  letter-spacing: -.025rem;
-  color: #32333A;
-  line-height: 3.5rem;
-  margin: 0;
-  text-decoration: none;
-}
-
 .overlay a:hover, .overlay a:focus {
     color: #FE4902;
 }
@@ -375,6 +406,7 @@ h5.overlay-label {
     margin-left: auto;
     margin-top: .25rem;
     color: #FE4902;
+    text-decoration: none;
 }
 
 .tfive {
@@ -438,8 +470,7 @@ h5.overlay-label {
   .topbar {margin-top: 2.25rem;}
   .topbar-label {display: none;}
   .overlay-top {margin-top: 2.25rem;}
-  .overlay-navigation-links {margin-top: 4rem; margin-bottom: 2rem;}
-  .overlay a {font-size: 1.75rem; line-height: 2.5rem;}
+  .overlay-navigation-links {margin-top: 4rem; margin-bottom: 2rem; a {font-size: 1.75rem; line-height: 2.5rem;}}
   .text-quote-block{margin: 4rem 0;}
   .text-page-title{margin-top: 4rem; margin-bottom: 2.5rem;}
   h5.section-label {margin-bottom: 2.5rem;}
@@ -448,6 +479,10 @@ h5.overlay-label {
   .project-content {flex-direction: column;}
   .project-title {p {margin: 0;} h5 {display: none;}}
   .project-details {margin: 0; h2 {display:none}}
+  .principals {margin-bottom: 2.25rem;}
+  .text-intro {margin-bottom: 5rem;}
+  .principals-content {flex-direction: column; p {margin: 1.75rem 0}}
+  .principals-license {margin: 3rem 0 0 0;}
   .visible-mobile {display: inline !important;}
   .hidden-mobile {display: none !important;}
 
