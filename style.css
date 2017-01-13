@@ -24,6 +24,7 @@ a {
 
 .site-content {
   max-width: 960px;
+  width: 100%;
   flex: 1;
 }
 
@@ -164,16 +165,6 @@ h5.overlay-label {
   color: #32333A;
   line-height: 1.5rem;
   max-width: 62ch;
-}
-
-.principals-container {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-.principals-section {
-  display: flex;
-  flex-direction: column;
 }
 
 .principals {
@@ -436,20 +427,12 @@ h5.overlay-label {
 }
 
 @media screen and (max-height: 500px) {
-  h1.text_quote {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
   .text-quote-block {
-    max-width: 42ch;
-    margin: 12vh 0;
+    margin: 18vh 0;
   }
   .overlay {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-  }
-  .overlay a {
-    font-size: 20px;
   }
   .overlay .closebtn {
     font-size: 40px;

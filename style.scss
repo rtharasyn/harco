@@ -24,6 +24,7 @@ a {
 
 .site-content {
     max-width: 960px;
+    width: 100%;
     flex: 1;
 }
 
@@ -169,16 +170,6 @@ h5.overlay-label {
   }
 }
 
-.principals-container {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-.principals-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .principals {
     margin-bottom: 4.5rem;
 }
@@ -219,7 +210,6 @@ h5.overlay-label {
     }
 }
 
-
 .text-quote-block{
     max-width: 90ch;
     margin: 8rem 0;
@@ -259,7 +249,6 @@ h5.overlay-label {
     max-width: 60ch;
     margin-bottom: 7.5rem;
 }
-
 
 .logo {
   a {
@@ -306,7 +295,6 @@ h5.overlay-label {
     color: #000;
     opacity: .35;
 }
-
 
 .overlay {
     position: fixed;
@@ -439,30 +427,14 @@ h5.overlay-label {
     letter-spacing: .1rem;
 }
 
-
 @media screen and (max-width: 1040px){
   .overlay-container-inner {margin: 0 4vh 0;}
 }
 
 @media screen and (max-height: 500px) {
-  h1.text_quote {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .text-quote-block{
-    max-width: 42ch;
-    margin: 12vh 0;
-  }
-  .overlay {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 18px;
-    right: 35px;
-  }
+  .text-quote-block{margin: 18vh 0;}
+  .overlay {overflow-y: auto; -webkit-overflow-scrolling: touch;}
+  .overlay .closebtn {font-size: 40px; top: 18px; right: 35px;}
 }
 
 @media screen and (max-width: 750px){
