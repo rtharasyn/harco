@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -14,6 +14,7 @@ p {
 a {
   color: #FE4902;
 }
+
 
 .site {
     min-height: 95vh;
@@ -34,9 +35,20 @@ h1.text_quote {
     font-weight: 400;
     letter-spacing: -.025rem;
     color: #32333A;
+    line-height: 3.25rem;
+    margin: 0;
+}
+
+h1.text_quote_dark {
+    font-family: 'Lora', serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: -.025rem;
+    color: #FFF;
     line-height: 3.5rem;
     margin: 0;
 }
+
 
 p.project-title-link {
     display: inline;
@@ -52,17 +64,15 @@ h4.label {
 }
 
 h5.section-label {
-    font-family: 'Inconsolata', monospace;
-    font-size: .8rem;
-    font-weight: lighter;
+    font-size: .75rem;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: .1rem;
-    color: #32333A;
+    letter-spacing: .075rem;
+    color: #98999C;
     margin-bottom: 3.5rem;
 }
 
 h5.overlay-label {
-    font-family: 'Inconsolata', monospace;
     font-size: .95rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -77,15 +87,21 @@ h5.overlay-label {
     justify-content: flex-start;
     flex-direction: row;
     position: relative;
+    align-items: center;
 }
 
 .topbar-label {
-    font-size: .85rem;
+    font-size: 14px;
     font-weight: 100;
     letter-spacing: .025rem;
     margin: 0;
     color: #32333A;
+    opacity: .5;
 }
+
+.dark {
+    color: #98999C;
+  }
 
 .topbar-menu{
     font-size: .85rem;
@@ -93,6 +109,7 @@ h5.overlay-label {
     color: #FE4902;
     flex: 0 1 auto;
     margin-left: auto;
+    text-decoration: underline;
 }
 
 .project {
@@ -115,28 +132,27 @@ h5.overlay-label {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
-    width: 200px;
+    width: 240px;
 
     p {
-      font-family: 'Inconsolata', monospace;
-      font-size: .8rem;
-      font-weight: lighter;
+      font-size: .7rem;
+      font-weight: normal;
       text-transform: uppercase;
-      letter-spacing: .1rem;
-      color: #32333A;
+      letter-spacing: .075rem;
+      color: #98999C;
       margin: 0 0 2rem 0;
     }
 
     a {
       font-size: 1.125rem;
-      font-weight: lighter;
+      letter-spacing: -.01rem;
+      font-weight: normal;
       text-decoration: none;
-      color: #FE4902;
+      color: #32333A;
       margin-bottom: .25rem;
   }
 
     h5 {
-      font-family: 'Inconsolata', monospace;
       font-size: .8rem;
       font-weight: lighter;
       line-height: 1rem;
@@ -148,13 +164,14 @@ h5.overlay-label {
 .project-content {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .project-details {
 
   h2 {
     font-family: 'Lora', serif;
-    font-size: 2rem;
+    font-size: 1.77rem;
     font-weight: 400;
     letter-spacing: -.025rem;
     color: #32333A;
@@ -165,6 +182,7 @@ h5.overlay-label {
     font-size: 1rem;
     font-weight: normal;
     color: #32333A;
+    opacity: .75;
     line-height: 1.5rem;
     max-width: 62ch;
   }
@@ -201,7 +219,6 @@ h5.overlay-label {
     margin: 12rem 0 0 0;
 
     p {
-      font-family: 'Inconsolata', monospace;
       font-size: .8rem;
       font-weight: lighter;
       line-height: 1.25rem;
@@ -225,7 +242,6 @@ h5.overlay-label {
     margin: 1.5rem 0;
 
     p {
-      font-family: 'Inconsolata', monospace;
       font-size: .8rem;
       font-weight: lighter;
       line-height: 1.25rem;
@@ -303,7 +319,7 @@ h5.overlay-label {
     left: 0;
     height: 0%;
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: #32333A;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     transition: 0.3s;
@@ -323,9 +339,10 @@ h5.overlay-label {
 .overlay-top {
   margin-top: 5rem;
   display: flex;
+  align-items: center;
 
   h4 {
-    font-size: 1rem;
+    font-size: 14px;
   }
 }
 
@@ -353,29 +370,15 @@ h5.overlay-label {
   }
 }
 
-.overlay-title-link {
-    font-size: 1rem;
+.overlay-contact {
+    font-size: .88rem;
     font-weight: lighter;
-    color: #FE4902;
-    margin-bottom: .5rem;
-}
-
-.overlay-title {
-  h2 {
-    font-size: 1.125rem;
-    font-weight: normal;
-    color: #32333A;
-    margin-top: 5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.overlay-contact{
-  margin-bottom: 8rem;
+    color: #98999C;
+    margin-bottom: .75rem;
 }
 
 .overlay p {
-  max-width: 545px;
+  max-width: 600px;
   line-height: 1.5rem;
   font-weight: normal;
 }
@@ -385,17 +388,64 @@ h5.overlay-label {
 }
 
 .overlay .closebtn {
-    font-family: -apple-system, BlinkMacSystemFont,;
-    font-size: 2rem;
-    font-weight: 200;
-    letter-spacing: 0;
-    line-height: 0;
+    font-size: .85rem;
+    font-weight: 400;
+    letter-spacing: .025rem;
     flex: 0 1 auto;
     margin-left: auto;
-    margin-top: .25rem;
-    color: #FE4902;
-    text-decoration: none;
+    color: #FFF;
+    text-decoration: underline;
 }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 4rem;
+
+  p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #FFF;
+    opacity: .85;
+    line-height: 2rem;
+  }
+
+  a {
+    color: #CBCCCD;
+    text-decoration: underline;
+  }
+}
+
+.content-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 260px;
+
+    h5 {
+      font-size: .75rem;
+      letter-spacing: .07rem;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #FFF;
+      line-height: 1rem;
+      margin-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  li {
+    color: #98999C;
+    font-size: .75rem;
+    padding-bottom: 16px;
+  }
+}
+
 
 .tfive {
     margin-top: 16rem;
@@ -435,10 +485,12 @@ h5.overlay-label {
   .text-quote-block{margin: 18vh 0;}
   .overlay {overflow-y: auto; -webkit-overflow-scrolling: touch;}
   .overlay .closebtn {font-size: 40px; top: 18px; right: 35px;}
+  .content {flex-direction: row;}
 }
 
 @media screen and (max-width: 750px){
   h1.text_quote {font-size: 1.75rem; line-height: 2.25rem;}
+  h1.text_quote_dark {font-size: 1.75rem; line-height: 2.25rem;}
   .topbar {margin-top: 2.25rem;}
   .topbar-label {display: none;}
   .overlay-top {margin-top: 2.25rem;}
@@ -451,6 +503,8 @@ h5.overlay-label {
   .project-content {flex-direction: column;}
   .project-title {p {margin: 0;} h5 {display: none;}}
   .project-details {margin: 0; h2 {display:none}}
+  .content {flex-direction: column;}
+  .content-sidebar{p {margin: 0;}}
   .principals {margin-bottom: 2.25rem;}
   .text-intro {margin-bottom: 5rem;}
   .principals-content {flex-direction: column; p {margin: 1.75rem 0}}
