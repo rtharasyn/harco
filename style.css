@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -364,7 +364,7 @@ h5.overlay-label {
 }
 
 .overlay-contact {
-  font-size: .88rem;
+  font-size: 16px;
   font-weight: lighter;
   color: #98999C;
   margin-bottom: .75rem;
@@ -402,7 +402,7 @@ h5.overlay-label {
   font-weight: normal;
   color: #FFF;
   opacity: .85;
-  line-height: 2rem;
+  line-height: 34px;
 }
 
 .content a {
@@ -418,7 +418,7 @@ h5.overlay-label {
 }
 
 .content-sidebar h5 {
-  font-size: .75rem;
+  font-size: 14px;
   letter-spacing: .07rem;
   text-transform: uppercase;
   font-weight: normal;
@@ -435,7 +435,7 @@ h5.overlay-label {
 
 .content-sidebar li {
   color: #98999C;
-  font-size: .75rem;
+  font-size: 14px;
   padding-bottom: 16px;
 }
 
@@ -519,8 +519,12 @@ h5.overlay-label {
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
+  .overlay-contact {
+    font-size: 14px;
+    margin-bottom: .5rem;
+  }
   .text-quote-block {
-    margin: 4rem 0;
+    margin: 68px 0;
   }
   .text-page-title {
     margin-top: 4rem;
