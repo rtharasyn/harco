@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora" rel="stylesheet">
     <script type="text/javascript" src="/assets/ga.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
 
@@ -181,6 +182,66 @@
         </div>
        </div>
       </div>
+      <button class="load-button">Load More</button>
+        <div class="project display-none">
+            <div class="project-cover">
+              <img src="/assets/shopbop_mobile.jpg" class="visible-mobile">
+              <img src="/assets/shopbop.jpg" class="hidden-mobile">
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <a href="https://itunes.apple.com/us/app/shopbop-womens-fashion/id739985481?mt=8" target="_blank">Shopbop<img src="/assets/open-window-icon.svg" style="height: 13px; padding-left: 1ch;"></a>
+                <p>Shopbop.com</p>
+              </div>
+              <div class="project-details">
+                <h2>High Conversion for High Fashion</h2>
+                <p class="text">Simplifying the mobile buying experince for Shopbop’s flagship application, elevating the shopping experience.</p>
+                <div class="tag-container">
+                  <p>Product Strategy・Design Direction・IxD・iOS・M-Commerce・Retail・Fashion・Agile<p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+        <div class="project display-none">
+            <div class="project-cover">
+              <img src="/assets/getty_mobile.jpg" class="visible-mobile">
+              <img src="/assets/getty.jpg" class="hidden-mobile">
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <a href="https://itunes.apple.com/us/app/getty-images-moment/id728072549?mt=8" target="_blank">Moment<img src="/assets/open-window-icon.svg" style="height: 13px; padding-left: 1ch;"></a>
+                <p>Getty Images</p>
+              </div>
+              <div class="project-details">
+                <h2>Reframing Stock Photography</h2>
+                <p class="text">Revitalizing stock photography by leveraging mobile devices to reshape how and when photography is sourced.</p>
+                <div class="tag-container">
+                  <p>Product Strategy・Ecosystem Design・Design Direction・iOS<p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="project display-none">
+          <div class="project-cover">
+            <img src="/assets/resound_mobile.jpg" class="visible-mobile">
+            <img src="/assets/resound.jpg" class="hidden-mobile">
+          </div>
+          <div class="project-content">
+            <div class="project-title">
+              <a href="https://gnresoundblog.com/2012/03/30/new-clearpath-ipad-app/" target="_blank">ClearPath<img src="/assets/open-window-icon.svg" style="height: 13px; padding-left: 1ch;"></a>
+              <p>GN Resound</p>
+            </div>
+            <div class="project-details">
+              <h2>Improving the Counseling Process</h2>
+              <p class="text">Improving the counseling process by bridging the gap between understanding hearing loss and technology.</p>
+              <div class="tag-container">
+                <p>Product Strategy and Research・Design Direction・UxD・IxD・iOS・User Research・Executive Stakeholders・Medical Device・New Technology<p>
+              </div>
+            </div>
+          </div>
+        </div>
      </div>
     </div>
     <div class="footer">
@@ -204,6 +265,12 @@
           document.getElementById("myNav").style.height = "0%";
       }
 
+      $(document).ready(function(){
+          $("button").click(function(){
+              $(".project").removeClass("display-none");
+              $(this).addClass("display-none")
+          });
+      });
       </script>
   </body>
 </html>
