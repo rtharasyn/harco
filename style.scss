@@ -67,6 +67,17 @@ h1.text_quote_dark {
     margin: 0;
 }
 
+h5.text-quote-attribute {
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: .07rem;
+    text-transform: uppercase;
+    color: #98999C;
+    text-align: right;
+    margin-top: .5rem;
+    opacity: .5;
+}
+
 
 p.project-title-link {
     display: inline;
@@ -395,6 +406,11 @@ h5.overlay-label {
     margin-bottom: .75rem;
 }
 
+.overlay-text-quote-block{
+    max-width: 57ch;
+    margin: 8rem 0;
+}
+
 .overlay p {
   max-width: 600px;
   line-height: 1.5rem;
@@ -464,37 +480,6 @@ h5.overlay-label {
   }
 }
 
-
-.tfive {
-    margin-top: 16rem;
-    margin-bottom: 2rem;
-    color: #32333A;
-    opacity: .4;
-}
-
-.tfive-logo {
-    font-weight: bolder;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.tfive-quote {
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    font-style: italic;
-    margin-bottom: .75rem;
-    line-height: 1.5rem;
-    max-width: 24ch;
-}
-
-.tfive-label {
-    font-family: 'Inconsolata', monospace;
-    font-size: .7rem;
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-}
-
 @media screen and (max-width: 1040px){
   .overlay-container-inner {margin: 0 4vh 0;}
 }
@@ -502,7 +487,7 @@ h5.overlay-label {
 @media screen and (max-height: 500px) {
   .text-quote-block{margin: 18vh 0;}
   .overlay {overflow-y: auto; -webkit-overflow-scrolling: touch;}
-  .overlay .closebtn {font-size: 40px; top: 18px; right: 35px;}
+  .overlay .closebtn {font-size: .85rem; top: 18px; right: 35px;}
   .content {flex-direction: row;}
 }
 
@@ -513,9 +498,11 @@ h5.overlay-label {
   .topbar-label {display: none;}
   .overlay-top {margin-top: 2.25rem;}
   .overlay-navigation-links {margin-top: 4rem; margin-bottom: 2rem; a {font-size: 1.75rem; line-height: 2.5rem;}}
-  .overlay-contact {font-size: 14px; margin-bottom: .5rem;}
+  .overlay-contact {font-size: 16px; margin-bottom: .5rem;}
+  .overlay-text-quote-block{margin: 68px 0;}
   .text-quote-block{margin: 68px 0;}
   .text-page-title{margin-top: 4rem; margin-bottom: 2.5rem;}
+  h5.text-quote-attribute {text-align: left;}
   h5.section-label {margin-bottom: 2.5rem;}
   .project {margin-bottom: 4rem;}
   .project-cover {margin: 0 -4vh 2rem;}
