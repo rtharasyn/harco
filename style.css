@@ -15,8 +15,39 @@ a {
   color: #FE4902;
 }
 
+.navigation {
+  margin-top: 3rem;
+}
+
+.navigation a {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #5D5F65;
+}
+
+.navigation--bottom {
+  margin-top: 6rem;
+}
+
+.navigation--bottom a {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #5D5F65;
+}
+
 .display-none {
   display: none;
+}
+
+.inline {
+  margin-left: 240px;
+}
+
+.block {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .load-button {
@@ -39,12 +70,21 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .site-content {
   max-width: 960px;
   width: 100%;
   flex: 1;
+}
+
+p.project-title-link {
+  display: inline;
+  color: #FE4902;
+  border-bottom: 1px;
+  border-bottom-style: solid;
 }
 
 h1.text_quote {
@@ -76,13 +116,6 @@ h5.text-quote-attribute {
   text-align: right;
   margin-top: .5rem;
   opacity: .5;
-}
-
-p.project-title-link {
-  display: inline;
-  color: #FE4902;
-  border-bottom: 1px;
-  border-bottom-style: solid;
 }
 
 h4.label {
@@ -189,13 +222,47 @@ h5.overlay-label {
   margin: 0;
 }
 
-.project-content {
+.project-container {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-.project-details h2 {
+.project-intro {
+  max-width: 90ch;
+  margin: 4rem 0 3.5rem 0;
+}
+
+.project-intro h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: -.025rem;
+  color: #32333A;
+  line-height: 3.25rem;
+  margin: 0;
+}
+
+.project-intro h4 {
+  font-size: .7rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .075rem;
+  color: #98999C;
+  margin: 0 0 2rem 0;
+}
+
+.project-intro p {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #32333A;
+  opacity: .75;
+  line-height: 1.5rem;
+  max-width: 52ch;
+  margin-top: 4rem;
+}
+
+.project-summary h2 {
   font-family: 'Lora', serif;
   font-size: 1.77rem;
   font-weight: 400;
@@ -204,13 +271,77 @@ h5.overlay-label {
   margin: 0;
 }
 
-.project-details p {
+.project-summary p {
   font-size: 1rem;
   font-weight: normal;
   color: #32333A;
   opacity: .75;
   line-height: 1.5rem;
   max-width: 62ch;
+}
+
+.project-headline h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.77rem;
+  font-weight: 400;
+  letter-spacing: -.025rem;
+  color: #32333A;
+  margin: 4rem 0;
+  margin-left: 240px;
+}
+
+.project-slideshow {
+  margin-bottom: 2rem;
+}
+
+.project-slideshow p {
+  font-size: 14px;
+  line-height: 30px;
+  max-width: 86ch;
+  margin-top: -2rem;
+}
+
+.content-quote {
+  max-width: 68ch;
+}
+
+.content-quote h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.77rem;
+  font-weight: 400;
+  letter-spacing: -.025rem;
+  color: #32333A;
+  font-style: italic;
+  padding-left: 5rem;
+}
+
+.content-quote h5 {
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: .07rem;
+  text-transform: uppercase;
+  color: #98999C;
+  text-align: right;
+  opacity: .5;
+}
+
+.project-content h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.77rem;
+  font-weight: 400;
+  letter-spacing: -.025rem;
+  color: #32333A;
+  margin: 0;
+}
+
+.project-content p {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #32333A;
+  opacity: .75;
+  line-height: 32px;
+  max-width: 62ch;
+  padding-bottom: 16px;
 }
 
 .principals {
@@ -265,6 +396,17 @@ h5.overlay-label {
 
 .tag-container {
   margin: 1.5rem 0;
+  max-width: 64ch;
+}
+
+.tag-container h5 {
+  font-size: 12px;
+  letter-spacing: .07rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #32333A;
+  line-height: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .tag-container p {
@@ -312,7 +454,7 @@ h5.overlay-label {
 }
 
 .footer {
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -474,6 +616,33 @@ h5.overlay-label {
   padding-bottom: 16px;
 }
 
+.content-sidebar-light {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.content-sidebar-light h5 {
+  font-size: 12px;
+  letter-spacing: .07rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #32333A;
+  line-height: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-sidebar-light ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-sidebar-light li {
+  color: #98999C;
+  font-size: 14px;
+  padding-bottom: 16px;
+}
+
 @media screen and (max-width: 1040px) {
   .overlay-container-inner {
     margin: 0 4vh 0;
@@ -513,6 +682,9 @@ h5.overlay-label {
   .topbar-label {
     display: none;
   }
+  .navigation {
+    margin-top: 2rem;
+  }
   .overlay-top {
     margin-top: 2.25rem;
   }
@@ -550,7 +722,7 @@ h5.overlay-label {
   .project-cover {
     margin: 0 -4vh 2rem;
   }
-  .project-content {
+  .project-container {
     flex-direction: column;
   }
   .project-title p {
@@ -559,17 +731,40 @@ h5.overlay-label {
   .project-title h5 {
     display: none;
   }
-  .project-details {
+  .project-content p {
+    line-height: 1.75rem;
+  }
+  .project-intro {
+    margin: 68px 0;
+  }
+  .project-intro h1 {
+    font-size: 1.75rem;
+  }
+  .project-summary {
     margin: 0;
   }
-  .project-details h2 {
+  .project-summary h2 {
     display: none;
+  }
+  .project-headline h2 {
+    margin-left: 0px;
+  }
+  .project-slideshow p {
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 0;
   }
   .content {
     flex-direction: column;
   }
   .content-sidebar p {
     margin: 0;
+  }
+  .content-sidebar-light {
+    display: none;
+  }
+  .content-quote h2 {
+    padding-left: 2rem;
   }
   .principals {
     margin-bottom: 2.25rem;
@@ -591,5 +786,12 @@ h5.overlay-label {
   }
   .hidden-mobile {
     display: none !important;
+  }
+  .inline {
+    margin: 0;
+  }
+  .block {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
