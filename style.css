@@ -713,7 +713,7 @@ h5.overlay-label {
   }
   h1.text_quote_dark {
     max-width: 18ch;
-    font-size: 1.75rem;
+    font-size: 1.75rem !important;
     line-height: 2.25rem;
   }
   .topbar {
@@ -800,7 +800,6 @@ h5.overlay-label {
   .slideshow-container {
     margin: 0 -4vh 0rem;
     height: 340px;
-    width: auto;
   }
   .slideshow-title-slide {
     width: 140px;

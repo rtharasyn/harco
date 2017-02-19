@@ -713,7 +713,7 @@ h5.overlay-label {
 
 @media screen and (max-width: 750px){
   h1.text_quote {font-size: 1.75rem; line-height: 2.25rem;}
-  h1.text_quote_dark {max-width: 18ch; font-size: 1.75rem; line-height: 2.25rem;}
+  h1.text_quote_dark {max-width: 18ch; font-size: 1.75rem !important; line-height: 2.25rem;};
   .topbar {margin-top: 2.25rem;}
   .topbar-label {display: none;}
   .navigation {margin-top: 2rem;}
@@ -735,7 +735,7 @@ h5.overlay-label {
   .project-headline {h2 {margin-left: 0px;}}
   .project-slideshow {p {font-size: 12px; line-height: 22px; margin-top: 2rem;}}
   .slideshow-content { img {height: 300px;}}
-  .slideshow-container {margin: 0 -4vh 0rem; height: 340px; width: auto;}
+  .slideshow-container {margin: 0 -4vh 0rem; height: 340px;}
   .slideshow-title-slide {width: 140px; padding-top: 3rem;}
   .content {flex-direction: column;}
   .content-sidebar{p {margin: 0;}}
