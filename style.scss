@@ -232,7 +232,7 @@ h5.overlay-label {
 
 .project-intro{
     max-width: 90ch;
-    margin: 4rem 0 3.5rem 0;
+    margin: 4rem 0 5rem 0;
 
     h1 {
         font-family: 'Lora', serif;
@@ -704,6 +704,7 @@ h5.overlay-label {
 }
 
 @media screen and (max-height: 500px) {
+  h1.text_quote_dark {max-width: 28ch; font-size: 1.75rem; line-height: 2.25rem;}
   .text-quote-block{margin: 18vh 0;}
   .overlay {overflow-y: auto; -webkit-overflow-scrolling: touch;}
   .overlay .closebtn {font-size: .85rem; top: 18px; right: 35px;}
@@ -712,7 +713,7 @@ h5.overlay-label {
 
 @media screen and (max-width: 750px){
   h1.text_quote {font-size: 1.75rem; line-height: 2.25rem;}
-  h1.text_quote_dark {font-size: 1.75rem; line-height: 2.25rem;}
+  h1.text_quote_dark {max-width: 18ch; font-size: 1.75rem; line-height: 2.25rem;}
   .topbar {margin-top: 2.25rem;}
   .topbar-label {display: none;}
   .navigation {margin-top: 2rem;}
@@ -748,5 +749,4 @@ h5.overlay-label {
   .hidden-mobile {display: none !important;}
   .inline {margin: 0;}
   .block {margin-top: 5rem; margin-bottom: 5rem;}
-
 }
