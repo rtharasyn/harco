@@ -323,6 +323,14 @@ h5.overlay-label {
     margin-bottom: auto;
     height: 480px;
   }
+
+  img.animated {
+    height: 440px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 2rem;
+    box-shadow: 0 0 20px 4px rgba(50, 51, 58, .1);
+  }
 }
 
 .slideshow-title-slide {
@@ -493,15 +501,6 @@ h5.overlay-label {
   }
 }
 
-.text-logo {
-    font-family: 'Inconsolata', monospace;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: #000;
-    line-height: 1.5rem;
-    letter-spacing: 3pt;
-    text-transform: uppercase;
-}
 
 .text-link {
     font-family: -apple-system, BlinkMacSystemFont,;
@@ -734,7 +733,7 @@ h5.overlay-label {
   .project-summary {margin: 0; h2 {display:none}}
   .project-headline {h2 {margin-left: 0px;}}
   .project-slideshow {p {font-size: 12px; line-height: 22px; margin-top: 2rem;}}
-  .slideshow-content { img {height: 300px;}}
+  .slideshow-content { img {height: 300px;} img.animated {height: 260px;}}
   .slideshow-container {margin: 0 -4vh 0rem; height: 340px;}
   .slideshow-title-slide {width: 140px; padding-top: 3rem;}
   .content {flex-direction: column;}

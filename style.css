@@ -311,6 +311,14 @@ h5.overlay-label {
   height: 480px;
 }
 
+.slideshow-content img.animated {
+  height: 440px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-right: 2rem;
+  box-shadow: 0 0 20px 4px rgba(50, 51, 58, 0.1);
+}
+
 .slideshow-title-slide {
   width: 240px;
   padding-left: 4vh;
@@ -469,16 +477,6 @@ h5.overlay-label {
 
 .logo a {
   margin: 0;
-}
-
-.text-logo {
-  font-family: 'Inconsolata', monospace;
-  font-size: 1rem;
-  font-weight: bolder;
-  color: #000;
-  line-height: 1.5rem;
-  letter-spacing: 3pt;
-  text-transform: uppercase;
 }
 
 .text-link {
@@ -796,6 +794,9 @@ h5.overlay-label {
   }
   .slideshow-content img {
     height: 300px;
+  }
+  .slideshow-content img.animated {
+    height: 260px;
   }
   .slideshow-container {
     margin: 0 -4vh 0rem;
