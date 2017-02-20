@@ -305,24 +305,16 @@ h5.overlay-label {
   height: 531px;
 }
 
-.slideshow-content img {
-  height: 440px;
-  margin-top: 18px;
-  margin-bottom: 18px;
-  margin-right: 2rem;
-  box-shadow: 0 0 20px 4px rgba(50, 51, 58, 0.15);
-}
-
-.slideshow-content img.no-shadow {
-  box-shadow: none;
-}
-
-.slideshow-content img.animated {
+.slideshow-content img.slide {
   height: 440px;
   margin-top: 18px;
   margin-bottom: 18px;
   margin-right: 2rem;
   box-shadow: 0 0 20px 4px rgba(50, 51, 58, 0.1);
+}
+
+.slideshow-content img.no-shadow {
+  box-shadow: none;
 }
 
 .slideshow-title-slide {
@@ -390,6 +382,11 @@ h5.overlay-label {
   line-height: 32px;
   max-width: 62ch;
   padding-bottom: 16px;
+}
+
+.project-content a {
+  color: #717278;
+  text-decoration: underline;
 }
 
 .principals {
@@ -801,7 +798,7 @@ h5.overlay-label {
   .slideshow-content img {
     height: 300px;
   }
-  .slideshow-content img.animated {
+  .slideshow-content img.slide {
     height: 260px;
   }
   .slideshow-container {
@@ -851,5 +848,8 @@ h5.overlay-label {
   .block {
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+  .small-block {
+    padding-top: 1rem;
   }
 }
