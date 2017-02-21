@@ -28,7 +28,7 @@ a {
 }
 
 .navigation--bottom {
-  margin-top: 6rem;
+  margin-top: 4rem;
 
   a {
     cursor: pointer;
@@ -47,8 +47,12 @@ a {
 }
 
 .block {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.last {
+  margin-bottom: 6.5rem;
 }
 
 
@@ -73,8 +77,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 .site-content {
@@ -168,12 +170,14 @@ h5.overlay-label {
   }
 
 .topbar-menu{
-    font-size: .85rem;
+    font-size: 12px;
     font-weight: 400;
-    color: #FE4902;
-    flex: 0 1 auto;
+    color: #535359;
     margin-left: auto;
-    text-decoration: underline;
+
+    &:hover, :focus {
+        text-decoration: underline;
+    }
 }
 
 .project {
@@ -233,7 +237,7 @@ h5.overlay-label {
 
 .project-intro{
     max-width: 90ch;
-    margin: 4rem 0 5rem 0;
+    margin: 3rem 0 8rem 0;
 
     h1 {
         font-family: 'Lora', serif;
@@ -614,17 +618,16 @@ h5.overlay-label {
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #FE4902;
+    text-decoration: underline;
 }
 
 .overlay .closebtn {
-    font-size: .85rem;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: .025rem;
-    flex: 0 1 auto;
     margin-left: auto;
     color: #FFF;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .content {
@@ -720,7 +723,7 @@ h5.overlay-label {
   h1.text_quote_dark {max-width: 18ch; font-size: 1.75rem !important; line-height: 2.25rem;};
   .topbar {margin-top: 2.25rem;}
   .topbar-label {display: none;}
-  .navigation {margin-top: 2rem;}
+  .navigation {margin-top: 34px;}
   .overlay-top {margin-top: 2.25rem;}
   .overlay-navigation-links {margin-top: 4rem; margin-bottom: 2rem; a {font-size: 1.75rem; line-height: 2.5rem;}}
   .overlay-contact {font-size: 16px; margin-bottom: .5rem;}
@@ -734,10 +737,10 @@ h5.overlay-label {
   .project-container {flex-direction: column;}
   .project-title {p {margin: 0;} h5 {display: none;}}
   .project-content {p{line-height: 1.75rem}}
-  .project-intro {margin: 48px 0; h1 {font-size: 1.75rem;}}
+  .project-intro {margin: 32px 0 68px 0; h1 {font-size: 1.75rem;}}
   .project-summary {margin: 0; h2 {display:none}}
   .project-headline {h2 {margin-left: 0px;}}
-  .project-slideshow {p {font-size: 12px; line-height: 22px; margin-top: 2rem;}}
+  .project-slideshow {p {font-size: 12px; line-height: 22px; margin-top: 1rem;}}
   .slideshow-content { img {height: 300px;} img.slide {height: 260px;}}
   .slideshow-container {margin: 0 -4vh 0rem; height: 340px;}
   .slideshow-title-slide {width: 140px; padding-top: 3rem;}
@@ -752,6 +755,7 @@ h5.overlay-label {
   .visible-mobile {display: inline !important;}
   .hidden-mobile {display: none !important;}
   .inline {margin: 0;}
-  .block {margin-top: 5rem; margin-bottom: 5rem;}
-  .small-block {padding-top: 1rem;}
+  .block {margin-top: 3.5rem; margin-bottom: 3.5rem;}
+  .last { margin-bottom: 4rem;}
+  .small-block {padding-top: 8px;}
 }
