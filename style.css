@@ -575,7 +575,7 @@ h5.overlay-label {
 }
 
 .overlay-contact {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: lighter;
   color: #98999C;
   margin-bottom: .75rem;
@@ -632,8 +632,18 @@ h5.overlay-label {
   width: 260px;
 }
 
-.content-sidebar h5 {
+.content-sidebar h4 {
   font-size: 14px;
+  letter-spacing: .07rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #FFF;
+  line-height: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-sidebar h5 {
+  font-size: 12px;
   letter-spacing: .07rem;
   text-transform: uppercase;
   font-weight: normal;
@@ -652,6 +662,13 @@ h5.overlay-label {
   color: #98999C;
   font-size: 14px;
   padding-bottom: 16px;
+}
+
+.content-sidebar a {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #98999C;
 }
 
 .content-sidebar-light {
