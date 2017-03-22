@@ -12,7 +12,8 @@ p {
 }
 
 a {
-  color: #FE4902;
+  color: #535359;
+  text-decoration: none;
 }
 
 .navigation {
@@ -167,13 +168,19 @@ h5.overlay-label {
 }
 
 .topbar-menu {
+  display: flex;
   font-size: 12px;
   font-weight: 400;
   color: #535359;
   margin-left: auto;
 }
 
-.topbar-menu:hover, .topbar-menu :focus {
+.topbar-menu a {
+  color: #535359;
+  padding-left: .75rem;
+}
+
+.topbar-menu a:hover, .topbar-menu a :focus {
   text-decoration: underline;
 }
 
