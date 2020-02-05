@@ -156,11 +156,11 @@ h5.overlay-label {
 
 .topbar-label {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: .025rem;
   margin: 0;
   color: #32333A;
-  opacity: .5;
+  opacity: .75;
 }
 
 .dark {
@@ -467,7 +467,7 @@ h5.overlay-label {
 
 .tag-container p {
   font-size: .8rem;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 1.25rem;
   opacity: .5;
 }
