@@ -1,0 +1,64 @@
+---
+interface Props {
+  title: string;
+  client: string;
+  headline: string;
+  description: string;
+  tags: string;
+  url?: string;
+  caseStudyUrl?: string;
+  coverImage: string;
+  coverImageMobile: string;
+  awards?: string;
+  hidden?: boolean;
+}
+
+const {
+  title,
+  client,
+  headline,
+  description,
+  tags,
+  url,
+  caseStudyUrl,
+  coverImage,
+  coverImageMobile,
+  awards,
+  hidden = false,
+} = Astro.props;
+---
+
+<div class:list={['project', { 'display-none': hidden }]}>
+  <div class="project-cover">
+    <img src={coverImageMobile} class="visible-mobile">
+    <img src={coverImage} class="hidden-mobile">
+  </div>
+  <div class="project-container">
+    <div class="project-title">
+      {url ? (
+        <a href={url} target="_blank">{title}<img src="/assets/open-window-icon.svg" style="height: 13px; padding-left: 1ch;"></a>
+      ) : (
+        <a>{title}</a>
+      )}
+      <p>{client}</p>
+      {awards && (
+        <>
+          <h5><img src="/assets/award_icon.svg" style="height: 16px;">{awards}</h5>
+          <h5>Webby Awards</h5>
+        </>
+      )}
+    </div>
+    <div class="project-summary">
+      <h2>{headline}</h2>
+      <p class="text">{description}</p>
+      <div class="tag-container">
+        <p>{tags}</p>
+      </div>
+      {caseStudyUrl ? (
+        <div class="navigation"><a href={caseStudyUrl}>View Case Study &rarr;</a></div>
+      ) : (
+        <div class="navigation" style="opacity: .5;"><a href="mailto:rtharasyn@gmail.com?subject=Hello">Please Enquire &nearr;</a></div>
+      )}
+    </div>
+  </div>
+</div>

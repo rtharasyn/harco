@@ -1,0 +1,45 @@
+---
+import OverlayNav from '../components/OverlayNav.astro';
+import Topbar from '../components/Topbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.scss';
+
+interface Props {
+  title?: string;
+  topbarVariant?: 'home' | 'page';
+}
+
+const { title = 'Harasyn.co — Product Strategy & Design', topbarVariant = 'home' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>{title}</title>
+  </head>
+  <body class="site">
+    <main class="site-content">
+      <OverlayNav />
+      <Topbar variant={topbarVariant} />
+      <slot />
+      <Footer />
+    </main>
+    <script is:inline>
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('[data-open-nav]')) {
+          document.getElementById('myNav').style.height = '100%';
+        }
+        if (e.target.closest('[data-close-nav]')) {
+          document.getElementById('myNav').style.height = '0%';
+        }
+      });
+    </script>
+  </body>
+</html>

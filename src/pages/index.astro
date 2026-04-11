@@ -1,0 +1,101 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<Base>
+  <div class="text-quote-block">
+    <h1 class="text_quote">Shaping the way we interact with the world through product strategy and design.</h1>
+  </div>
+  <div class="section">
+    <h5 class="section-label">recent projects</h5>
+    <ProjectCard
+      title="Mazlo Coach"
+      client="Mazlo"
+      headline="Advice, delivered."
+      description="On-demand human coaching for support through life's challenges with parenting, stress, relationships and sleep."
+      tags="Executive Leadership・Design Direction and Execution・Marketing and Brand Strategy・Product Strategy and Management"
+      caseStudyUrl="/projects/mazlo"
+      coverImage="/assets/mazlo_test.jpg"
+      coverImageMobile="/assets/mazlo_test_mobile.jpg"
+    />
+    <div class="section">
+      <h5 class="section-label">notable projects</h5>
+      <ProjectCard
+        title="Mansion Global"
+        client="News Corp."
+        headline="Luxury Real Estate, Global Market"
+        description="Creating the premier digital destination serving the needs of the world's most affluent real estate buyers."
+        tags="Brand Development・Design Direction and Execution・Executive Stakeholders・Product Strategy and Research"
+        url="http://www.mansionglobal.com"
+        coverImage="/assets/mansion_global.jpg"
+        coverImageMobile="/assets/mansion_global_mobile.jpg"
+      />
+      <ProjectCard
+        title="Distiller.com"
+        client="Distiller"
+        headline="Bringing Whiskey to the Masses"
+        description="Bringing Whiskey to the masses with an award winning multi-platform, social discovery experience for enthusiasts."
+        tags="Brand Development・Design Direction and Execution・Product Strategy and Research"
+        url="http://www.distiller.com"
+        awards="x2"
+        coverImage="/assets/distiller.jpg"
+        coverImageMobile="/assets/distiller_mobile.jpg"
+      />
+    </div>
+    <ProjectCard
+      title="Novartis.com"
+      client="Novartis"
+      headline="Creating a Global Network"
+      description="Modernizing a global ecosystem and creating a scalable foundation for the pharmaceutical leader."
+      tags="Design Direction・Executive Stakeholders・Product Strategy and Research"
+      url="http://www.novartis.com"
+      coverImage="/assets/novartis.jpg"
+      coverImageMobile="/assets/novartis_mobile.jpg"
+    />
+    <button class="load-button" data-load-more>Load More &darr;</button>
+    <ProjectCard
+      title="Shopbop"
+      client="Shopbop.com"
+      headline="High Conversion for High Fashion"
+      description="Simplifying the mobile buying experience for Shopbop's flagship application, elevating the shopping experience."
+      tags="Design Direction and Execution・Product Strategy"
+      url="https://itunes.apple.com/us/app/shopbop-womens-fashion/id739985481?mt=8"
+      coverImage="/assets/shopbop.jpg"
+      coverImageMobile="/assets/shopbop_mobile.jpg"
+      hidden={true}
+    />
+    <ProjectCard
+      title="Moment"
+      client="Getty Images"
+      headline="Reframing Stock Photography"
+      description="Revitalizing stock photography by leveraging mobile devices to reshape how and when photography is sourced."
+      tags="Design Direction and Execution・Product Strategy and Research"
+      url="https://itunes.apple.com/us/app/getty-images-moment/id728072549?mt=8"
+      coverImage="/assets/getty.jpg"
+      coverImageMobile="/assets/getty_mobile.jpg"
+      hidden={true}
+    />
+    <ProjectCard
+      title="ClearPath"
+      client="GN Resound"
+      headline="Improving the Counseling Process"
+      description="Improving the counseling process by bridging the gap between understanding hearing loss and technology."
+      tags="Design Direction and Execution・Executive Stakeholders・Product Strategy and Research"
+      url="https://gnresoundblog.com/2012/03/30/new-clearpath-ipad-app/"
+      coverImage="/assets/resound.jpg"
+      coverImageMobile="/assets/resound_mobile.jpg"
+      hidden={true}
+    />
+  </div>
+</Base>
+
+<script is:inline>
+  document.querySelector('[data-load-more]')?.addEventListener('click', function() {
+    document.querySelectorAll('.project.display-none').forEach(function(el) {
+      el.style.display = '';
+      el.classList.remove('display-none');
+    });
+    this.style.display = 'none';
+  });
+</script>

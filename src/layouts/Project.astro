@@ -1,0 +1,20 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  platform?: string;
+}
+
+const { title, platform } = Astro.props;
+---
+
+<Base title={`${title} — Harasyn.co`} topbarVariant="page">
+  <div class="navigation"><a href="/">&larr; Back</a></div>
+  <div class="project-intro">
+    <h1>{title}</h1>
+    {platform && <h4>{platform}</h4>}
+  </div>
+  <slot />
+  <div class="navigation--bottom"><a href="#">&uarr; Back to Top</a></div>
+</Base>

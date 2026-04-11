@@ -1,0 +1,27 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  date: Date;
+}
+
+const { title, date } = Astro.props;
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Base title={`${title} — Harasyn.co`} topbarVariant="page">
+  <div class="navigation"><a href="/blog">&larr; Back to Blog</a></div>
+  <div class="project-intro">
+    <h1>{title}</h1>
+    <h4>{formattedDate}</h4>
+  </div>
+  <div class="blog-content">
+    <slot />
+  </div>
+  <div class="navigation--bottom"><a href="#">&uarr; Back to Top</a></div>
+</Base>

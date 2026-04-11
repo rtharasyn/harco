@@ -1,0 +1,25 @@
+---
+interface Props {
+  variant?: 'home' | 'page';
+}
+
+const { variant = 'home' } = Astro.props;
+---
+
+<div class="topbar">
+  <a class="logo" href="/"><img src="/assets/hco_logo.png" style="height: 12px;"></a>
+  <h4 class="topbar-label"><img src="/assets/vertical-break.svg" style="height: 12px; padding: 0 1rem;">Product Strategy & Design</h4>
+  <div class="topbar-menu">
+    {variant === 'home' ? (
+      <>
+        <a href="/sketchbook">Sketchbook</a>
+        <a style="cursor:pointer" data-open-nav>About</a>
+      </>
+    ) : (
+      <>
+        <a href="/">Home</a>
+        <a style="cursor:pointer" data-open-nav>About</a>
+      </>
+    )}
+  </div>
+</div>
