@@ -1,4 +1,4 @@
-# harasyn.co
+# harasyn.design
 
 Personal portfolio and blog built with [Astro](https://astro.build).
 
@@ -56,4 +56,4 @@ Write your article content here in Markdown.
 
 ## Deployment
 
-Pushes to `main` trigger a GitHub Actions workflow that builds and deploys to GitHub Pages at [harasyn.co](https://harasyn.co).
+Pushes to `main` trigger a GitHub Actions workflow that builds and deploys to GitHub Pages at [harasyn.design](https://harasyn.design).

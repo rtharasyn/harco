@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://harasyn.co',
+  site: 'https://harasyn.design',
   output: 'static',
 });
